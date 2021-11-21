@@ -7,7 +7,7 @@
 }
 
 :root {
-  --pri-color: #290f3d;
+  --pri-color: #1e0432;
   --sec-color: #d4236d;
 }
 
@@ -37,6 +37,15 @@ body {
   .md-ms-5 {
     margin-left: 0 !important;
   }
+
+  h2,
+  p {
+    text-align: center;
+  }
+
+  .small {
+    justify-content: space-evenly;
+  }
 }
 
 /* .h1s:hover {
@@ -55,6 +64,10 @@ body {
     font-size: 100px;
     text-shadow: 8px 8px 1px var(--sec-color);
   }
+
+  .p-6 {
+    padding: 30px 50px;
+  }
 }
 
 button {
@@ -70,4 +83,42 @@ button {
 
 button:hover {
   box-shadow: 10px 10px 0px #ffffff;
+}
+
+.small a {
+  margin-top: 30px;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: none;
+  color: white;
+  border: 1.5px solid var(--sec-color);
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 158.4px !important;
+}
+
+.small a:hover {
+  background-color: var(--sec-color);
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  color: var(--sec-color);
+  text-shadow: 1px 1px 0px white;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+  margin: 10px;
+}
+
+.btn-2 {
+  padding: 10px 40px !important;
+}
+
+.mb-6 {
+  margin-bottom: 10rem !important;
 }
