@@ -11,14 +11,19 @@
   --sec-color: #d4236d;
 }
 
+::selection {
+  background: #d4236da4;
+  color: #ffffff;
+}
+
 body {
   background-color: var(--pri-color);
   padding-top: 110px;
 }
 
 .h1 {
-  text-shadow: 4px 4px 1px var(--sec-color);
-  font-size: calc(2.375rem + 2.5vw);
+  font-size: 100px;
+  text-shadow: 8px 8px 1px var(--sec-color);
   font-weight: 700;
 }
 
@@ -26,16 +31,16 @@ body {
   margin-left: 3rem !important;
 }
 
-@media (max-width: 768px) {
-  .h1 {
-    font-size: 90px;
-  }
-
+@media (max-width: 991px) {
   .h1s {
     text-align: center;
   }
   .md-ms-5 {
     margin-left: 0 !important;
+  }
+
+  .p-6 {
+    padding: 30px 50px;
   }
 
   h2,
@@ -48,6 +53,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .h1 {
+    font-size: 55px;
+    text-shadow: 5px 5px 1px var(--sec-color);
+  }
+}
+
 /* .h1s:hover {
   transition: all 0.2s ease-in-out;
   letter-spacing: 0.525em;
@@ -57,17 +69,6 @@ body {
 .img-fluid {
   display: flex;
   margin: 0 auto;
-}
-
-@media (min-width: 1000px) {
-  .h1 {
-    font-size: 100px;
-    text-shadow: 8px 8px 1px var(--sec-color);
-  }
-
-  .p-6 {
-    padding: 30px 50px;
-  }
 }
 
 button {
@@ -85,12 +86,19 @@ button:hover {
   box-shadow: 10px 10px 0px #ffffff;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  background-color: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
 .small a {
   margin-top: 30px;
   padding: 8px 16px;
-  text-decoration: none;
-  background-color: none;
-  color: white;
   border: 1.5px solid var(--sec-color);
   border-radius: 4px;
   font-size: 16px;
