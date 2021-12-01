@@ -21,37 +21,79 @@
         rel="stylesheet">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
 
     <title>Portfolio | Laalasa Krishna</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-var fixed-top ps-lg-5 pe-lg-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="src/LK.png" width="40px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="work.html">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container p-lg-5">
         <div class="row">
             <div class="col-lg ps-3">
-                <h1 class="ps-3"> Hello, I am Laalasa Krishna.</h1>
-                <h3 class="ps-3">Frontend Developer based in Hyderabad, India</h3>
+                <h1 class="p-3"> Hello, I am Laalasa Krishna.</h1>
+                <h3 class="p-3">Frontend Developer based in Hyderabad, India</h3>
                 <p class="text-start ps-2">For anyone who wants to start learning code, this workshop is very
                     interesting.
                     You
                     will be challenged
                     with different exercises, and everything is well explained, homework and deadlines are good for keep
                     focus</p>
+                <div class="d-flex small ps-lg-3">
+                    <a href="work.html">
+                        See my projects
+                    </a>
+                </div>
             </div>
             <div class="col-lg p-5">
                 <img src="src/roses.jpg" class="img-fluid rounded" alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro fugiat doloremque nisi quisquam
-                adipisci eos. Illum odio perspiciatis incidunt laboriosam natus dolore nihil dolores exercitationem?
-                Libero quis odit natus? Consectetur et, recusandae illo necessitatibus veritatis vel esse ullam
-                provident, iusto perspiciatis mollitia iure doloremque soluta molestias excepturi possimus ipsum.</p>
-            <div id="contact">
-                contact
-            </div>
+
         </div>
     </div>
+    <footer>
+        <div class="mt-5 text-center">
+            <a href="https://www.instagram.com/laalasa._.krishhh/"><img width="60px" class="p-3" src="src/in.png"
+                    alt=""></a>
+            <a href="https://www.linkedin.com/in/laalasakrishna/"><img width="60px" class="p-3" src="src/linkedin.png"
+                    alt=""></a>
+            <a href="https://twitter.com/LaalasaKrishna"><img width="60px" class="p-3" src="src/twt.png" alt=""></a>
+            <a href="https://github.com/Laalasa"><img width="60px" class="p-3" src="src/git.png" alt=""></a>
+            <a href="mailto:laalasa.krishna@gmail.com"><img width="60px" class="p-3" src="src/mail.png" alt=""></a>
+        </div>
+        <div class="text-center mb-5 mt-3 footer">
+            This website was coded by Laalasa, and is<a href="https://github.com/Laalasa/Portfolio">Opensourced</a>
+        </div>
+    </footer>
 </body>
 
 </html>
