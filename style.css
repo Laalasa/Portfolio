@@ -151,6 +151,9 @@ body {
     font-size: 55px;
     text-shadow: 5px 5px 1px var(--sec-color);
   }
+  .text-center a img {
+    width: 50px;
+  }
 }
 
 /* .h1s:hover {
